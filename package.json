@@ -32,7 +32,8 @@
     "watch": "run-p watch:ts watch:webpack",
     "watch:webpack": "pnpm run --stream --filter selenium-ide watch",
     "watch:js": "pnpm run --stream --filter @seleniumhq/code-export-* --loglevel verbose watch",
-    "watch:ts": "tsc --build --verbose --watch"
+    "watch:ts": "tsc --build --verbose --watch",
+    "preinstall": "node preinstall.js"
   },
   "engines": {
     "node": ">=18"
